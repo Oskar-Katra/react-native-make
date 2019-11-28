@@ -18,7 +18,6 @@ SplashScreen.hide();
 
 - Use a `.png` to preserve background transparency
 - **3000px** as min height and/or width
-- For **cover** splashscreens, preserve a 1/3 padding  for important content to avoid clipping a Logo or Text
 
 ## Resize modes
 
