@@ -79,7 +79,7 @@ const generateIosSplashImages = (imageSource: string, iosSplashImageFolder: stri
     multipliers.map(multiplier =>
       generateResizedAssets(
         imageSource,
-        `${iosSplashImageFolder}/splash@${multiplier}x.png`,
+        `${iosSplashImageFolder}/splash@${multiplier}x_${Date.now()}.png`,
         size * multiplier,
         size * multiplier,
         {
