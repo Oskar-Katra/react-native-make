@@ -57,7 +57,7 @@ const addSplashScreenXib = (backgroundColor, resizeMode = type_1.EResizeMode.CON
 };
 const generateIosSplashImages = (imageSource, iosSplashImageFolder) => {
     const { multipliers, size, backgroundColor } = config_1.config.iosSplashImage;
-    return Promise.all(multipliers.map(multiplier => image_processing_1.generateResizedAssets(imageSource, `${iosSplashImageFolder}/splash@${multiplier}x.png`, size * multiplier, size * multiplier, {
+    return Promise.all(multipliers.map(multiplier => image_processing_1.generateResizedAssets(imageSource, `${iosSplashImageFolder}/splash@${multiplier}x_${Date.now()}.png`, size * multiplier, size * multiplier, {
         fit: 'inside',
     })));
 };
